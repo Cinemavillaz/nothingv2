@@ -112,8 +112,7 @@ async def auto_filter(bot, update):
                 break
             
             if pm_file_chat:
-
-unique_id = filter.get("unique_id")
+                unique_id = filter.get("unique_id")
                 if not FIND.get("bot_details"):
                     try:
                         bot_= await bot.get_me()
