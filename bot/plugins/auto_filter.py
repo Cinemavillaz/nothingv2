@@ -142,7 +142,7 @@ async def auto_filter(bot, update):
     
         result = []
         # seperating total files into chunks to make as seperate pages
-        result += [ * max_per_page :(i + 1) * max_per_page ] for i in range((len(results) + max_per_page - 1) // max_per_page )]
+        result += "[ * max_per_page :(i + 1) * max_per_page ] for i in range((len(results) + max_per_page - 1) // max_per_page )]",
         len_result = len(result)
         len_results = len(results)
         results = None # Free Up Memory
